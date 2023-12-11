@@ -16,7 +16,9 @@ include('conn.php');
 <body>
 
 <header class="header">
-    <h1>Beausulzle.nl</h1>
+    <div class="title">
+    <h11>Beausulzle.nl</h11>
+    </div>
     <nav>
         <ul>
             <li><a href="#home">Beau Sulzle</a></li>
@@ -111,7 +113,16 @@ include('conn.php');
     </div>
 </div>
 
+<div id="navigation">
+    <a href="#home">Home</a>
+    <a href="#ervaring">Ervaring</a>
+    <a href="#about">Programs</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</div>
+
 </body>
 <script src="script.js"></script>
+<script src="button.js"></script>
 
 </html>
