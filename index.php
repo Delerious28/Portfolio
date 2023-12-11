@@ -39,7 +39,7 @@ include('conn.php');
         <h1>Second Text Container</h1>
         <p>This is the bottom text content.</p>
     </div>
-    <img class="ik" src="img/b2.png" alt="Your Image">
+    <img class="ik" id="responsiveImage" src="img/b2.png" alt="Your Image">
 </div>
 
 
@@ -124,5 +124,6 @@ include('conn.php');
 </body>
 <script src="script.js"></script>
 <script src="button.js"></script>
+<script src="image.js"></script>
 
 </html>
