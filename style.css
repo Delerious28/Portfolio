@@ -331,54 +331,30 @@ body::-webkit-scrollbar-track {
     }
 
     .bn39 {
-        background-image: linear-gradient(135deg, #008aff, #86d472);
-        color: #ffffff;
-        display: flex;
+        margin-left: 50%;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        height: 50px;
-        font-size: 1.4em;
-        font-weight: 600;
-        position: relative;
+        z-index: 1000;
+        display: flex;;
+        width: 80%;
+        background-color: rgba(0,0,0,0.5);
+        text-align:  center;
+        margin-bottom: 10px;
+        padding: 13px;
+        color: #fff;
         text-decoration: none;
-        width: 7em;
-        z-index: 2;
-        margin-left: 50px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
     }
 
 
     .bn39:hover {
-        color: #fff;
+        background-color: rgba(0,0,0,0.8);
+        color: #ffd700;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box-shadow on hover */
     }
 
-    .bn39 .bn39span {
-        align-items: center;
-        background: #0e0e10;
-        display: flex;
-        justify-content: center;
-        height: 100%;
-        transition: background 0.5s ease;
-        width: 100%;
-    }
-
-    .bn39:hover .bn39span {
-        background: transparent;
-    }
-
-
-    .bn39 .bn39span {
-        align-items: center;
-        background: #0e0e10;
-        display: flex;
-        justify-content: center;
-        height: 100%;
-        transition: background 0.5s ease;
-        width: 100%;
-    }
-
-    .bn39:hover .bn39span {
-        background: transparent;
-    }
 
 
     .text-box-container {
@@ -387,6 +363,8 @@ body::-webkit-scrollbar-track {
         align-items: center;
         text-align: center;
         width: 100%;
+        border-radius: 20px;
+
     }
 
     .program-text-box {
@@ -450,25 +428,29 @@ body::-webkit-scrollbar-track {
         flex-direction: column;
         align-items: flex-end;
         z-index: 1000;
+        padding: 20px;
     }
 
     #navigation a {
-        width: 100%;
+        display: flex;;
+        width: 80%;
+        background-color: rgba(0,0,0,0.6);
         text-align:  center;
         margin-bottom: 10px;
-        padding: 10px;
-        background-color: #3498db;
+        padding: 13px;
         color: #fff;
         text-decoration: none;
-        border-radius: 5px;
+        border-radius: 10px;
         cursor: pointer;
         transition: background-color 0.3s ease-in-out;
+
     }
 
     #navigation a:hover {
-        background-color: #2980b9;
+        background-color: rgba(0,0,0,0.8);
         color: #ffd700;
-
+        transform: scale(1.1); /* Scale the element on hover */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box-shadow on hover */
     }
 
 }
@@ -548,7 +530,7 @@ body::-webkit-scrollbar-track {
 
     .container1 {
         height: 200px;
-        width: 80%;
+        width: 90%;
         margin-top: 30px;
         margin-left: auto;
         margin-right: auto;
@@ -635,7 +617,7 @@ body::-webkit-scrollbar-track {
     }
 
     .container2 {
-        width: 80%;
+        width: 90%;
         margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
@@ -769,7 +751,7 @@ body::-webkit-scrollbar-track {
 
 
     .container3 {
-        width: 80%;
+        width: 90%;
         margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
@@ -790,7 +772,6 @@ body::-webkit-scrollbar-track {
     }
 
     .bn39 {
-        background-image: linear-gradient(135deg, #010aff, #86d472);
         color: #ffffff;
         display: flex;
         align-items: center;
@@ -867,7 +848,7 @@ body::-webkit-scrollbar-track {
 
     .container4 {
         height: 200px;
-        width: 80%;
+        width: 90%;
         margin-top: 30px;
         margin-left: auto;
         margin-right: auto;
@@ -886,7 +867,7 @@ body::-webkit-scrollbar-track {
 
     .container5 {
         height: 200px;
-        width: 80%;
+        width: 90%;
         margin-top: 30px;
         margin-left: auto;
         margin-right: auto;
