@@ -14,10 +14,11 @@ include('conn.php');
 </head>
 
 <body>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <header class="header">
     <div class="title">
-    <h11>Beausulzle.nl</h11>
+        <h11>Beausulzle.nl</h11>
     </div>
     <nav>
         <ul>
@@ -28,6 +29,7 @@ include('conn.php');
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+    <button class="toggle-btn toggle-btn-light" onclick="toggleMode()"></button>
 </header>
 
 <div id="home" class="container1">
@@ -125,5 +127,19 @@ include('conn.php');
 <script src="script.js"></script>
 <script src="button.js"></script>
 <script src="image.js"></script>
+<script>
+    function toggleMode() {
+        document.body.classList.toggle('dark-mode');
+    }
+</script>
+<script>
+    function toggleMode() {
+        const body = document.body;
+        const toggleBtn = document.querySelector('.toggle-btn');
 
+        body.classList.toggle('dark-mode');
+        toggleBtn.classList.toggle('toggle-btn-dark');
+        toggleBtn.classList.toggle('toggle-btn-light');
+    }
+</script>
 </html>
