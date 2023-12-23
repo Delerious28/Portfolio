@@ -23,7 +23,7 @@ include('conn.php');
     <nav>
         <ul>
             <li><a href="#home">Beau Sulzle</a></li>
-            <li><a href="#ervaring">Ervaring</a></li>
+            <li><a href="#ervaring">About me</a></li>
             <li><a href="#about">Programs</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -48,14 +48,23 @@ include('conn.php');
 
 
 <div id="ervaring" class="container2">
-    <h2>Ervaring</h2>
+    <h2>About me</h2>
     <div class="content-container">
         <div class="images-container">
-            <img src="img/r1.png" alt="Image 1">
-            <img src="img/r2.png" alt="Image 2">
-            <img src="img/r.jpeg" alt="Image 3">
-            <img src="img/a3.png" alt="Image 4">
+            <a href="https://www.linkedin.com/in/beau-sulzle-3106b3268/" target="_blank">
+                <img src="img/LinkedIn_logo_initials.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/Delerious28" target="_blank">
+                <img src="img/github.png" alt="GitHub">
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=beausulzle@gmail.com" target="_blank">
+                <img src="img/gmail.png" alt="Your Website">
+            </a>
+            <a onclick="loadDiscordChat()">
+                <img src="img/discord.png" alt="Discord">
+            </a>
         </div>
+
 
         <div class="text-box">
             <h2>Your Title</h2>
@@ -117,7 +126,7 @@ include('conn.php');
 
 <div id="navigation">
     <a href="#home">Home</a>
-    <a href="#ervaring">Ervaring</a>
+    <a href="#ervaring">About me</a>
     <a href="#about">Programs</a>
     <a href="#services">Services</a>
     <a href="#contact">Contact</a>
@@ -142,4 +151,30 @@ include('conn.php');
         toggleBtn.classList.toggle('toggle-btn-light');
     }
 </script>
+<script>
+    function loadDiscordChat() {
+        var script = document.createElement('script');
+        script.src = 'https://cdn.jsdelivr.net/npm/@widgetbot/crate@3';
+        script.async = true;
+        script.defer = true;
+        document.head.appendChild(script);
+
+        script.onload = function () {
+            new Crate({
+                server: '1005842678451282031', // Delerious28's server
+                channel: '1188142193093910739' // #general
+            });
+
+            // Move the Discord button to a different location in the DOM
+            var discordButton = document.querySelector('.w-crate-toggle');
+            var newLocation = document.getElementById('newLocation');
+
+            if (newLocation && discordButton) {
+                newLocation.appendChild(discordButton);
+            }
+        };
+
+        return false;
+    }
+</script
 </html>
