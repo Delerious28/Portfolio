@@ -48,33 +48,7 @@ include('conn.php');
 
 
 <div id="ervaring" class="container2">
-    <h2>About me</h2>
-    <div class="content-container">
-        <div class="images-container">
-            <a href="https://www.linkedin.com/in/beau-sulzle-3106b3268/" target="_blank">
-                <img src="img/LinkedIn_logo_initials.png" alt="LinkedIn">
-            </a>
-            <a href="https://github.com/Delerious28" target="_blank">
-                <img src="img/github.png" alt="GitHub">
-            </a>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=beausulzle@gmail.com" target="_blank">
-                <img src="img/gmail.png" alt="Your Website">
-            </a>
-            <a onclick="loadDiscordChat()">
-                <img src="img/discord.png" alt="Discord">
-            </a>
-        </div>
 
-
-        <div class="text-box">
-            <h2>Your Title</h2>
-            <p>Your text content goes here.</p>
-        </div>
-    </div>
-
-    <div class="button-container">
-        <a href="ervaring.php" class="bn53">More info</a>
-    </div>
 </div>
 
 
@@ -106,10 +80,6 @@ include('conn.php');
 </div>
 
 
-
-
-
-
 <div id="services" class="container4">
     <h2>Services</h2>
     <div class="content-container">
@@ -118,9 +88,36 @@ include('conn.php');
 </div>
 
 <div id="contact" class="container5">
-    <h2>Contact</h2>
+    <div class="text-container2">
+        <h4>Welcome to My Website</h4>
+        <img class="iik" id="responsiveImage" src="img/hireme.png" alt="Your Image">
+
+        <div class="buttons">
+        <a href="path/to/your/cv.pdf" download="Beau_Sulzle_CV.pdf">
+            <button class="download-btn1">Resume</button>
+        </a>
+        <a href="path/to/your/cv.pdf" download="Beau_Sulzle_CV.pdf">
+            <button class="download-btn2">Hire me</button>
+        </a>
+        </div>
+
+    </div>
+
     <div class="content-container">
-        <p>Your contact section content goes here.</p>
+        <div class="images-container">
+            <a href="https://www.linkedin.com/in/beau-sulzle-3106b3268/" target="_blank">
+                <img src="img/LinkedIn_logo_initials.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/Delerious28" target="_blank">
+                <img src="img/github.png" alt="GitHub">
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=beausulzle@gmail.com" target="_blank">
+                <img src="img/gmail.png" alt="Your Website">
+            </a>
+            <a onclick="loadDiscordChat()">
+                <img src="img/discord.png" alt="Discord">
+            </a>
+        </div>
     </div>
 </div>
 
